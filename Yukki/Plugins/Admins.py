@@ -153,7 +153,7 @@ async def admins(_, message: Message):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>**Skipped Voice Chat**</b>\n\n🎼 **<b>Started Playing :** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **Requested by :** {mention}"
+                        f"<b>**Skipped Voice Chat**</b>\n\n🎼 **<b>Sedang Memutar :** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **Requested by :** {mention}"
                     ),
                 )
                 os.remove(thumb)
@@ -198,7 +198,7 @@ async def admins(_, message: Message):
                 final_output = await message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"**<b>Skipped Voice Chat**</b>\n\n🎼 **<b>Started Playing :**</b> {title} \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **<b>Requested by :**</b> {mention}",
+                    caption=f"**<b>Skipped Voice Chat**</b>\n\n🎼 **<b>Sedang Memutar :**</b> {title} \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **<b>Requested by :**</b> {mention}",
                 )
             await start_timer(
                 videoid,
