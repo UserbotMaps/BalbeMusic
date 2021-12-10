@@ -78,7 +78,7 @@ async def admins(_, message: Message):
         await music_off(chat_id)
         await Yukki.pytgcalls.pause_stream(chat_id)
         await message.reply_text(
-            f"🎧 Voicechat Paused by {message.from_user.mention}!"
+            f"🎧 Voicechat Paused by {message.from_user.mention}"
         )
     if message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
@@ -86,7 +86,7 @@ async def admins(_, message: Message):
         await music_on(chat_id)
         await Yukki.pytgcalls.resume_stream(message.chat.id)
         await message.reply_text(
-            f"🎧 Voicechat Resumed by {message.from_user.mention}!"
+            f"🎧 Voicechat Resumed by {message.from_user.mention}"
         )
     if message.command[0][1] == "t" or message.command[0][1] == "n":
         try:
@@ -96,14 +96,14 @@ async def admins(_, message: Message):
         await remove_active_chat(chat_id)
         await Yukki.pytgcalls.leave_group_call(message.chat.id)
         await message.reply_text(
-            f"🎧 Voicechat End/Stopped by {message.from_user.mention}!"
+            f"🎧 Voicechat End/Stopped by {message.from_user.mention}"
         )
     if message.command[0][1] == "k":
         Queues.task_done(chat_id)
         if Queues.is_empty(chat_id):
             await remove_active_chat(chat_id)
             await message.reply_text(
-                "No more music in __Queue__ \n\nLeaving Voice Chat"
+                "No more music in Queue \n\nLeaving Voice Chat"
             )
             await Yukki.pytgcalls.leave_group_call(message.chat.id)
             return
@@ -116,7 +116,7 @@ async def admins(_, message: Message):
             aud = 0
             if str(finxx) != "raw":
                 mystic = await message.reply_text(
-                    f"**{MUSIC_BOT_NAME} Playlist Function**\n\n__Downloading Next Music From Playlist....__"
+                    f"**{MUSIC_BOT_NAME} Playlist Function**\n\nDownloading Next Music From Playlist...."
                 )
                 (
                     title,
@@ -153,7 +153,7 @@ async def admins(_, message: Message):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__Started Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} Mins\n👤**__Requested by:__** {mention}"
+                        f"<b>**Skipped Voice Chat**</b>\n\n🎼 **<b>Started Playing :** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **Requested by :** {mention}"
                     ),
                 )
                 os.remove(thumb)
@@ -198,7 +198,7 @@ async def admins(_, message: Message):
                 final_output = await message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__Started Playing:__</b> {title} \n⏳<b>__Duration:__</b> {duration_min} \n👤<b>__Requested by:__ </b> {mention}",
+                    caption=f"**<b>Skipped Voice Chat**</b>\n\n🎼 **<b>Started Playing :**</b> {title} \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **<b>Requested by :**</b> {mention}",
                 )
             await start_timer(
                 videoid,
