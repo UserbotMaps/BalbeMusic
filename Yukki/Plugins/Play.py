@@ -100,7 +100,7 @@ async def play(_, message: Message):
         buttons = url_markup2(videoid, duration_min, message.from_user.id)
         return await message.reply_photo(
             photo=thumb,
-            caption=f"**🏷Nama: **{title}\n\n⏰**Durasi:** {duration_min} Menit\n\n💡[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"🏷 **Nama: **{title}\n\n⏰ **Durasi:** {duration_min} Menit\n\n💡 [Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -131,7 +131,7 @@ async def play(_, message: Message):
         )
         return await message.reply_photo(
             photo=thumb,
-            caption=f"**🏷Nama: **{title}\n\n⏰**Durasi:** {duration_min} Menit\n\n💡[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"🏷 **Nama: **{title}\n\n⏰ **Durasi:** {duration_min} Menit\n\n💡 [Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
@@ -200,23 +200,23 @@ async def search_query_more(_, CallbackQuery):
         media="Utils/Result.JPEG",
         caption=(
             f"""
-1️⃣ <b>{results[0]['title']}</b>\n
+1️⃣ <b>{results[0]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[0]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-2️⃣ <b>{results[1]['title']}</b>\n
+2️⃣ <b>{results[1]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[1]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-3️⃣ <b>{results[2]['title']}</b>\n
+3️⃣ <b>{results[2]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[2]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-4️⃣ <b>{results[3]['title']}</b>\n
+4️⃣ <b>{results[3]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[3]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-5️⃣ <b>{results[4]['title']}</b>\n
+5️⃣ <b>{results[4]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[4]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 """
@@ -269,23 +269,23 @@ async def popat(_, CallbackQuery):
         )
         await CallbackQuery.edit_message_text(
             f"""
-6️⃣ <b>{results[5]['title']}</b>\n
+6️⃣ <b>{results[5]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[5]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-7️⃣ <b>{results[6]['title']}</b>\n
+7️⃣ <b>{results[6]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[6]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-8️⃣ <b>{results[7]['title']}</b>\n
+8️⃣ <b>{results[7]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[7]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-9️⃣ <b>{results[8]['title']}</b>\n
+9️⃣ <b>{results[8]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[8]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-🔟 <b>{results[9]['title']}</b>\n
+🔟 <b>{results[9]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[9]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 """,
@@ -310,23 +310,23 @@ async def popat(_, CallbackQuery):
         )
         await CallbackQuery.edit_message_text(
             f"""
-1️⃣ <b>{results[0]['title']}</b>\n
+1️⃣ <b>{results[0]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[0]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-2️⃣ <b>{results[1]['title']}</b>\n
+2️⃣ <b>{results[1]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[1]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-3️⃣ <b>{results[2]['title']}</b>\n
+3️⃣ <b>{results[2]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[2]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-4️⃣ <b>{results[3]['title']}</b>\n
+4️⃣ <b>{results[3]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[3]['id']})
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 
-5️⃣ <b>{results[4]['title']}</b>\n
+5️⃣ <b>{results[4]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[4]['id']}))
 ╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
 """,
@@ -366,7 +366,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"🏷**Nama: **{title}\n\n⏰**Durasi:** {duration_min} Menit\n\n💡[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"🏷 **Nama: **{title}\n\n⏰ **Durasi:** {duration_min} Menit\n\n💡 [Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
@@ -389,7 +389,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"🏷**Nama: **{title}\n\n⏰**Durasi:** {duration_min} Menit\n\n💡[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"🏷 **Nama: **{title}\n\n⏰ **Durasi:** {duration_min} Menit\n\n💡 [Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
