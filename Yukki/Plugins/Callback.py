@@ -170,7 +170,7 @@ async def admin_risghts(_, CallbackQuery):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>**Skipped Voice Chat**</b>\n\n🏷 **<b>Started Playing :** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **Requested by :** {mention}"
+                        f"<b>**Skipped Voice Chat**</b>\n\n🏷 **<b>Sedang Memutar :** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **Requested by :** {mention}"
                     ),
                 )
                 os.remove(thumb)
@@ -218,7 +218,7 @@ async def admin_risghts(_, CallbackQuery):
                 final_output = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>**Skipped Voice Chat**</b>\n\n🎼 **<b>Started Playing :**</b> {title} \n⏰ **<b>Durasi :**</b> {duration_min} \n👤 **<b>Requested by :** </b> {mention}",
+                    caption=f"<b>**Skipped Voice Chat**</b>\n\n🎼 **<b>Sedang Memutar :**</b> {title} \n⏰ **<b>Durasi :**</b> {duration_min} \n👤 **<b>Requested by :** </b> {mention}",
                 )
             await start_timer(
                 videoid,
