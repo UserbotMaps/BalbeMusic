@@ -103,7 +103,7 @@ async def admin_risghts(_, CallbackQuery):
         if Queues.is_empty(chat_id):
             await remove_active_chat(chat_id)
             await CallbackQuery.message.reply_text(
-                f"No more music in __Queue__ \n\nLeaving Voice Chat..Button Used By :- {CallbackQuery.from_user.mention}"
+                f"No more music in Queue \n\nLeaving Voice Chat..Button Used By :- {CallbackQuery.from_user.mention}"
             )
             await Yukki.pytgcalls.leave_group_call(chat_id)
             await CallbackQuery.message.delete()
@@ -124,7 +124,7 @@ async def admin_risghts(_, CallbackQuery):
                     "Skipped! Playlist Playing....", show_alert=True
                 )
                 mystic = await CallbackQuery.message.reply_text(
-                    f"**{MUSIC_BOT_NAME} Playlist Function**\n\n__Downloading Next Music From Playlist....__\n\nButton Used By :- {CallbackQuery.from_user.mention}"
+                    f"**{MUSIC_BOT_NAME} Playlist Function**\n\nDownloading Next Music From Playlist....\n\nButton Used By :- {CallbackQuery.from_user.mention}"
                 )
                 (
                     title,
@@ -170,7 +170,7 @@ async def admin_risghts(_, CallbackQuery):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>Skipped Voice Chat</b>\n\n🏷 <b>Started Playing : </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏰ <b>Durasi :</b> {duration_min} Menit\n👤 **Requested by :** {mention}"
+                        f"<b>**Skipped Voice Chat**</b>\n\n🏷 **<b>Started Playing :** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏰ **<b>Durasi :**</b> {duration_min} Menit\n👤 **Requested by :** {mention}"
                     ),
                 )
                 os.remove(thumb)
@@ -218,7 +218,7 @@ async def admin_risghts(_, CallbackQuery):
                 final_output = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>Skipped Voice Chat</b>\n\n🎼 <b>Started Playing:</b> {title} \n⏰ <b>Durasi :</b> {duration_min} \n👤 <b>Requested by : </b> {mention}",
+                    caption=f"<b>**Skipped Voice Chat**</b>\n\n🎼 **<b>Started Playing :**</b> {title} \n⏰ **<b>Durasi :**</b> {duration_min} \n👤 **<b>Requested by :** </b> {mention}",
                 )
             await start_timer(
                 videoid,
@@ -357,7 +357,7 @@ async def play_playlist(_, CallbackQuery):
                 got_queue.append(to_append)
                 await music_on(chat_id)
                 await add_active_chat(chat_id)
-                cap = f"🏷 <b>Memutar : </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡 <b>Info :</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤 **Requested by :** {CallbackQuery.from_user.mention}"
+                cap = f"🏷 **<b>Memutar :** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡 **<b>Info :**</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤 **Requested by :** {CallbackQuery.from_user.mention}"
                 final_output = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
