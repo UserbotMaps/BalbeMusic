@@ -202,23 +202,23 @@ async def search_query_more(_, CallbackQuery):
             f"""
 1️⃣ <b>{results[0]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[0]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 2️⃣ <b>{results[1]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[1]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 3️⃣ <b>{results[2]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[2]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 4️⃣ <b>{results[3]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[3]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 5️⃣ <b>{results[4]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[4]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 """
         ),
     )
@@ -271,23 +271,23 @@ async def popat(_, CallbackQuery):
             f"""
 6️⃣ <b>{results[5]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[5]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 7️⃣ <b>{results[6]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[6]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 8️⃣ <b>{results[7]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[7]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 9️⃣ <b>{results[8]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[8]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 🔟 <b>{results[9]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[9]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -312,23 +312,23 @@ async def popat(_, CallbackQuery):
             f"""
 1️⃣ <b>{results[0]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[0]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 2️⃣ <b>{results[1]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[1]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 3️⃣ <b>{results[2]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[2]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 4️⃣ <b>{results[3]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[3]['id']})
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 
 5️⃣ <b>{results[4]['title']}</b>
 ╚ 💡 [More Information](https://t.me/{BOT_USERNAME}?start=info_{results[4]['id']}))
-╚ ✨ **Powered by** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)
+╚ ✨ **Powered by** : [𝐑𝐢𝐤𝐦𝐚𝐥 𝐌𝐮𝐬𝐢𝐜]
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
